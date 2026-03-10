@@ -4,7 +4,7 @@
 
 It helps one person record shared expenses and automatically generate a clear settlement plan for a group — especially useful in temporary social scenarios such as dining, rent sharing, grocery shopping, and trips.
 
-> A 0-to-1 product project covering problem definition, MVP design, AI-assisted development, and deployment.
+> A 0-to-1 product project covering problem definition, MVP (Min Viable Product) design, AI-assisted development, and deployment.
 
 ## Live Demo
 
@@ -237,13 +237,3 @@ Potential next steps include:
 - backend and cloud sync
 - historical exchange rates
 - mobile-first optimization
-
----
-
-## Repository
-
-- **GitHub:** https://github.com/YuanJiang-Lucy/unisplit
-
-## Demo
-
-- **Live Demo:** https://unisplit.vercel.app/
