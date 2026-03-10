@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd C:/Users/jy_lu/unisplit && npm install 2>&1)",
+      "Bash(cd C:/Users/jy_lu/unisplit && npm install next@latest 2>&1)",
+      "Bash(cd C:/Users/jy_lu/unisplit && npm run build 2>&1)",
+      "Bash(cd C:/Users/jy_lu/unisplit && npm run dev 2>&1)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
