@@ -198,9 +198,10 @@ public/
 Add screenshots here if available:
 
 ~~~markdown
-![Participants Page](./public/screenshots/participants.png)
-![Expenses Page](./public/screenshots/expenses.png)
-![Settlement Page](./public/screenshots/settlement.png)
+![Participants Page](./public/screenshots/participants.jpg)
+![Expenses Page](./public/screenshots/expenses.jpg)
+![Settlement Page](./public/screenshots/settlement.jpg)
+![Exchange Helper Page](./public/screenshots/uni-bear.jpg)
 ~~~
 
 ---
