@@ -9,3 +9,8 @@ out/
 .DS_Store
 *.pem
 .env*
+
+.claude/
+*.tsbuildinfo
+.env
+.env.local

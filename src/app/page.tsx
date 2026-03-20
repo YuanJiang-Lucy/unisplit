@@ -7,7 +7,10 @@ import ParticipantsPanel from "@/components/ParticipantsPanel";
 import ExpensesPanel from "@/components/ExpensesPanel";
 import SettlementPanel from "@/components/SettlementPanel";
 import UniBear from "@/components/UniBear";
+import AIInput from "@/components/AIInput";
 import { calculateSettlements } from "@/lib/settlement";
+import { PARTICIPANT_COLORS } from "@/lib/types";
+import type { AppTab } from "@/lib/aiActions";
 
 type Tab = "participants" | "expenses" | "settlement";
 
@@ -111,6 +114,19 @@ export default function HomePage() {
           </div>
         </div>
       </header>
+
+      {/* AI input */}
+      <AIInput
+        participants={participants}
+        expenses={validExpenses}
+        onAddParticipant={(name) => {
+          if (participants.some((p) => p.name.toLowerCase() === name.toLowerCase())) return;
+          const color = PARTICIPANT_COLORS[participants.length % PARTICIPANT_COLORS.length];
+          setParticipants([...participants, { id: crypto.randomUUID(), name, color }]);
+        }}
+        onAddExpense={(expense) => setExpenses([...expenses, expense])}
+        onSwitchTab={(tab: AppTab) => setActiveTab(tab)}
+      />
 
       {/* Settlement overview card */}
       {(() => {
